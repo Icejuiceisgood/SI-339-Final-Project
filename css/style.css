@@ -6,14 +6,6 @@
         opacity:1;
     }
 }
-@keyframes headerfooter{
-    from{
-        opacity:0.1;
-    }
-    to{
-        opacity:1;
-    }
-}
 @keyframes examplenone{
     from{
         opacity: 0.5;
@@ -22,20 +14,15 @@
         opacity:1;
     }
 }
-@keyframes headerfooternone{
-    from{
-        opacity:0.5;
-    }
-    to{
-        opacity:1;
-    }
-}
+
 
 #cont{
     display: block;
     width:150px;
     margin-left: auto;
     margin-right: auto;
+    animation-name: example;
+    animation-duration:2s;
 }
 nav li, footer li{
     display: inline;
@@ -51,7 +38,7 @@ nav a, footer a{
     font-weight: bold;
     text-decoration: none;
     font-size: 15px;
-    animation-name: headerfooter;
+    animation-name: example;
     animation-duration:2s;
 }
 footer a{
@@ -68,13 +55,13 @@ nav a:hover, footer a:hover{
 }
 
 nav{
-    background-color: #ff9900;
+    background-color: #704300;
     display: flex;
     justify-content: space-between;
     align-items: center;
     }
 footer{
-    background-color: #ff9900;
+    background-color: #704300;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,14 +73,14 @@ header{
 }
 
 body{
-    background-color: rgb(89, 202, 241);
+    background-color: #095771;
     }
 
-h3,p,a{
+h1,p,a{
     color:white;
     font-size: 40px;
     text-align: center;
-    animation-name: headerfooter;
+    animation-name: example;
     animation-duration:2s;
 }
 
@@ -150,10 +137,10 @@ p{
     align-items: center;
 }
 .imgmemes{
-    width: 125px;
+    width: 250px;
 }
 .imgpuns{
-    width: 125px;
+    width: 375px;
 }
 
 
@@ -169,7 +156,7 @@ p{
     align-items: center;
 }
 .imgpickups{
-    width: 125px;
+    width: 375px;
 }
 
 .imgpickups:hover{
@@ -182,107 +169,50 @@ p{
 @media only screen and (min-width: 768px){
     #cont{
         width:225px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
     nav li, footer li{
-        display: inline;
-        padding-right:15px;
-        
-    }
-    nav ul{
-        text-decoration: none;
+        padding-right:15px;  
     }
     
     nav a, footer a{
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
         font-size: 20px;
-        animation-name: headerfooter;
-        animation-duration:2s;
     }
     footer a{
         font-size:15px;
     }
     nav a:hover, footer a:hover{
-        color: grey;
         text-decoration: underline;
     }
     
     #img{
         padding-left: 4%;
-        animation-name: example;
-        animation-duration:2s;
     }
+
     
-    nav{
-        background-color: #ff9900;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-    footer{
-        background-color: #ff9900;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin:-6px;
-      }
-    header{
-        margin:-6px;
-    }
-    
-    body{
-        background-color: rgb(89, 202, 241);
-      }
-    
-    h3,p,a{
-        color:white;
-        font-size: 70px;
-        text-align: center;
-        animation-name: headerfooter;
-        animation-duration:2s;
+    h1,p,a{
+        font-size: 50px;
     }
     
     p{
+        font-size:30px;
+    }
+    a{
         font-size:40px;
     }
-    
     .grid{
-        text-align: center;
         padding-right:20px;
-        text-decoration: none;
         
     }
     #gridcont{
-        display:grid;
         grid-template-columns: auto auto;
-        list-style:none;
         
     }
-    
-    .ah{
-        border:none;
-        padding: 2px; 
-        text-decoration: none;
-    }
-    
-    .ah:hover{
-        background-color: gray;
-    }
+
     
     #pungrid{
-        display:grid;
         grid-template-columns: auto auto auto;
-        list-style: none;
-        justify-content: space-around;
-        align-items: center;
     }
-    #menu{
-        list-style:none;
-    }
+
     
     .imgpuns:hover{
         border:2px dashed black;
@@ -291,13 +221,7 @@ p{
     
     
     #memebox{
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        grid-template-columns: auto auto auto;
-        list-style: none;
-        justify-content:space-around;
-        align-items: center;
+        flex-direction: row-reverse;
     }
     .imgmemes{
         width: 200px;
@@ -313,11 +237,7 @@ p{
     }
     
     #pickupgrid{
-        display:grid;
         grid-template-columns: auto auto auto;
-        list-style: none;
-        justify-content: space-around;
-        align-items: center;
     }
     .imgpickups{
         width: 250px;
@@ -334,171 +254,109 @@ p{
 @media only screen and (min-width: 992px){
 
     .imgmemes{
-            width: 275px;
-    }
-    .imgpuns{
-            width: 275px;
-    }
-    #menu{
-        list-style:none;
-    }
+        width: 275px;
+}
+.imgpuns{
+        width: 275px;
+}
+#menu{
+    list-style:none;
+}
+nav li, footer li{
+    padding-right:20px;
+    list-style: none;
+}
 
-    #cont{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    nav li, footer li{
-        display: inline;
-        padding-right:20px;
-        list-style: none;
-    }
-
-    nav a, footer a{
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 30px;
-        animation-name: headerfooter;
-        animation-duration:2s;
-    }
-    footer a{
-        font-size:20px;
-    }
-    nav a:hover, footer a:hover{
-        color: grey;
-        text-decoration: underline;
-    }
-
-    #img{
-        padding-left: 2%;
-        animation-name: example;
-        animation-duration:2s;
-    }
-
-    nav{
-        background-color: #ff9900;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    footer{
-        background-color: #ff9900;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin:-6px;
-    }
-
-    header{
-        margin:-6px;
-    }
-
-    body{
-        background-color: rgb(89, 202, 241);
-    }
-
-    h3,p,a{
-        color:white;
-        font-size: 70px;
-        text-align: center;
-        animation-name: headerfooter;
-        animation-duration:2s;
-    }
-
-    p{
-        font-size:40px;
-    }
-
-    .grid{
-        text-align: center;
-        padding-right:20px;
-        
-    }
-    #gridcont{
-        display:grid;
-        grid-template-columns: auto auto auto;
-        list-style:none;
-    }
-
-    .ah{
-        border:5px solid black;
-        padding: 2px; 
-        text-decoration: none;
-    }
-
-    .ah:hover{
-        background-color: gray;
-    }
-
-    #pungrid{
-        display:grid;
-        grid-template-columns: auto auto auto auto;
-        list-style: none;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .imgpuns:hover{
-        border:5px solid black;
-        opacity:0.5;
-    }
+nav a, footer a{
+    font-size: 30px;
+}
+footer a{
+    font-size:20px;
+}
+nav a:hover, footer a:hover{
+    text-decoration: underline;
+}
 
 
-    #memebox{
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        grid-template-columns: auto auto auto auto;
-        list-style: none;
-        justify-content:space-around;
-        align-items: center;
-    }
+p{
+    font-size:40px;
+}
 
-    .imgmemes:hover{
-        border:5px solid black;
-        opacity:0.5;
-    }
+.grid{
+    padding-right:20px;
+    
+}
+#gridcont{
+    grid-template-columns: auto auto auto;
+}
 
-    #pickupgrid{
-        display:grid;
-        grid-template-columns: auto auto auto auto;
-        list-style: none;
-        justify-content: space-around;
-        align-items: center;
-    }
+.ah{
+    border:5px solid black;
+}
 
-    .imgpickups:hover{
-        border:5px solid black;
-        opacity:0.5;
-    }
-    }
+#pungrid{
+    grid-template-columns: auto auto auto auto;
+}
+
+.imgpuns:hover{
+    border:5px solid black;
+}
+
+
+#memebox{
+    grid-template-columns: auto auto auto auto;
+    justify-content:space-between;
+}
+
+.imgmemes:hover{
+    border:5px solid black;
+}
+
+#pickupgrid{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgpickups:hover{
+    border:5px solid black;
+}
+}
 
 
 
 @media (prefers-reduced-motion) {
-    nav a, footer a{
-        color: white;
-        font-weight: bold;
-        text-decoration: none;
-        animation-name: headerfooternone;
-        animation-duration:4s;
-    }
-    #img{
-        padding-left: 2%;
-        animation-name: examplenone;
-        animation-duration:4s;
-    }
-    h3,p,a{
-        color:white;
-        text-align: center;
-        animation-name: headerfooternone;
-        animation-duration:4s;
-    }
-    .imgpuns:hover{
-        border:none;
-        opacity:1;
-    }
+nav a, footer a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    animation-name: examplenone;
+    animation-duration:4s;
+}
+#img{
+    padding-left: 2%;
+    animation-name: examplenone;
+    animation-duration:4s;
+}
+h1,p,a{
+    color:white;
+    text-align: center;
+    animation-name: examplenone;
+    animation-duration:4s;
+}
+.imgpuns:hover{
+    border:none;
+    opacity:1;
+}
+#cont{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: examplenone;
+    animation-duration:4s;
+}
 
     
 
