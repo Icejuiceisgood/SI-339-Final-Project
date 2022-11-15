@@ -1,34 +1,96 @@
+@keyframes example{
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity:1;
+    }
+}
 
-nav li{
+
+@keyframes headerfooter{
+    from{
+        opacity:0.1;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+
+nav li, footer li{
     display: inline;
     padding-right:20px;
 }
 
-nav ul{
-    align-items: center;
-}
-
-nav a{
+nav a, footer a{
     color: white;
     font-weight: bold;
     text-decoration: none;
     font-size: 30px;
-    margin-top:10px;
+    animation-name: headerfooter;
+    animation-duration:2s;
 }
-nav a:hover{
+nav a:hover, footer a:hover{
     color: grey;
     text-decoration: underline;
 }
-nav img{
-    width: 8%;
+
+#img{
     padding-left: 2%;
+    animation-name: example;
+    animation-duration:2s;
 }
+
 nav{
     background-color: #ff9900;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
+footer{
+    background-color: #ff9900;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin:-6px;
+  }
+header{
+    margin:-6px;
+}
 
 body{
     background-color: rgb(89, 202, 241);
   }
+
+h3,p,a{
+    color:white;
+    font-size: 70px;
+    text-align: center;
+    animation-name: headerfooter;
+    animation-duration:4s;
+}
+
+p{
+    font-size:40px;
+}
+
+.grid{
+    text-align: center;
+    padding-right:20px;
+    
+}
+#gridcont{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.ah{
+    border:5px solid black;
+    padding: 2px; 
+    text-decoration: none;
+}
+
+.ah:hover{
+    background-color: gray;
+}
