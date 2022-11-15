@@ -51,9 +51,12 @@ nav{
 footer{
     background-color: #ff9900;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     margin:-6px;
+  }
+  footer a{
+    font-size: 14px;
   }
 header{
     margin:-6px;
@@ -93,4 +96,22 @@ p{
 
 .ah:hover{
     background-color: gray;
+}
+
+@media (prefers-reduced-motion) {
+    nav a, footer a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    #img{
+        padding-left: 2%;
+    }
+    h3,p,a{
+        color:white;
+        font-size: 70px;
+        text-align: center;
+    }
+
 }
