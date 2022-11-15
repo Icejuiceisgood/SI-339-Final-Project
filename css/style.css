@@ -6,8 +6,6 @@
         opacity:1;
     }
 }
-
-
 @keyframes headerfooter{
     from{
         opacity:0.1;
@@ -16,28 +14,51 @@
         opacity:1;
     }
 }
+@keyframes examplenone{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes headerfooternone{
+    from{
+        opacity:0.5;
+    }
+    to{
+        opacity:1;
+    }
+}
 
 #cont{
     display: block;
+    width:150px;
     margin-left: auto;
     margin-right: auto;
 }
 nav li, footer li{
     display: inline;
-    padding-right:20px;
+    padding-right:10px;
+    
+}
+nav ul{
+    text-decoration: none;
 }
 
 nav a, footer a{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 15px;
     animation-name: headerfooter;
     animation-duration:2s;
 }
+footer a{
+    font-size:10px;
+}
 nav a:hover, footer a:hover{
     color: grey;
-    text-decoration: underline;
 }
 
 #img{
@@ -51,49 +72,50 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    }
 footer{
     background-color: #ff9900;
     display: flex;
     justify-content: center;
     align-items: center;
     margin:-6px;
-  }
-footer a{
-    font-size: 28px;
-}
+    }
+
 header{
     margin:-6px;
 }
 
 body{
     background-color: rgb(89, 202, 241);
-  }
+    }
 
 h3,p,a{
     color:white;
-    font-size: 70px;
+    font-size: 40px;
     text-align: center;
     animation-name: headerfooter;
     animation-duration:2s;
 }
 
 p{
-    font-size:40px;
+    font-size:20px;
 }
 
 .grid{
     text-align: center;
-    padding-right:20px;
+    padding-right:10px;
+    text-decoration: none;
     
 }
 #gridcont{
     display:grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
+    list-style:none;
+    
 }
 
 .ah{
-    border:5px solid black;
+    border:none;
     padding: 2px; 
     text-decoration: none;
 }
@@ -104,14 +126,16 @@ p{
 
 #pungrid{
     display:grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
     list-style: none;
     justify-content: space-around;
     align-items: center;
 }
+#menu{
+    list-style:none;
+}
 
 .imgpuns:hover{
-    border:5px solid black;
     opacity:0.5;
 }
 
@@ -120,30 +144,335 @@ p{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
     list-style: none;
     justify-content:space-around;
     align-items: center;
 }
+.imgmemes{
+    width: 125px;
+}
+.imgpuns{
+    width: 125px;
+}
+
 
 .imgmemes:hover{
-    border:5px solid black;
     opacity:0.5;
 }
 
 #pickupgrid{
     display:grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
     list-style: none;
     justify-content: space-around;
     align-items: center;
 }
+.imgpickups{
+    width: 125px;
+}
 
 .imgpickups:hover{
-    border:5px solid black;
     opacity:0.5;
 }
 
+
+
+
+@media only screen and (min-width: 768px){
+    #cont{
+        width:225px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav li, footer li{
+        display: inline;
+        padding-right:15px;
+        
+    }
+    nav ul{
+        text-decoration: none;
+    }
+    
+    nav a, footer a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 20px;
+        animation-name: headerfooter;
+        animation-duration:2s;
+    }
+    footer a{
+        font-size:15px;
+    }
+    nav a:hover, footer a:hover{
+        color: grey;
+        text-decoration: underline;
+    }
+    
+    #img{
+        padding-left: 4%;
+        animation-name: example;
+        animation-duration:2s;
+    }
+    
+    nav{
+        background-color: #ff9900;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    footer{
+        background-color: #ff9900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:-6px;
+      }
+    header{
+        margin:-6px;
+    }
+    
+    body{
+        background-color: rgb(89, 202, 241);
+      }
+    
+    h3,p,a{
+        color:white;
+        font-size: 70px;
+        text-align: center;
+        animation-name: headerfooter;
+        animation-duration:2s;
+    }
+    
+    p{
+        font-size:40px;
+    }
+    
+    .grid{
+        text-align: center;
+        padding-right:20px;
+        text-decoration: none;
+        
+    }
+    #gridcont{
+        display:grid;
+        grid-template-columns: auto auto;
+        list-style:none;
+        
+    }
+    
+    .ah{
+        border:none;
+        padding: 2px; 
+        text-decoration: none;
+    }
+    
+    .ah:hover{
+        background-color: gray;
+    }
+    
+    #pungrid{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #menu{
+        list-style:none;
+    }
+    
+    .imgpuns:hover{
+        border:2px dashed black;
+        opacity:1;
+    }
+    
+    
+    #memebox{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        grid-template-columns: auto auto auto;
+        list-style: none;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .imgmemes{
+        width: 200px;
+    }
+    .imgpuns{
+        width: 200px;
+    }
+    
+    
+    .imgmemes:hover{
+        border:2px dashed black;
+        opacity:1;
+    }
+    
+    #pickupgrid{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .imgpickups{
+        width: 250px;
+    }
+    
+    .imgpickups:hover{
+        border:2px dashed black;
+        opacity:1;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px){
+
+    .imgmemes{
+            width: 275px;
+    }
+    .imgpuns{
+            width: 275px;
+    }
+    #menu{
+        list-style:none;
+    }
+
+    #cont{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav li, footer li{
+        display: inline;
+        padding-right:20px;
+        list-style: none;
+    }
+
+    nav a, footer a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 30px;
+        animation-name: headerfooter;
+        animation-duration:2s;
+    }
+    footer a{
+        font-size:20px;
+    }
+    nav a:hover, footer a:hover{
+        color: grey;
+        text-decoration: underline;
+    }
+
+    #img{
+        padding-left: 2%;
+        animation-name: example;
+        animation-duration:2s;
+    }
+
+    nav{
+        background-color: #ff9900;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer{
+        background-color: #ff9900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:-6px;
+    }
+
+    header{
+        margin:-6px;
+    }
+
+    body{
+        background-color: rgb(89, 202, 241);
+    }
+
+    h3,p,a{
+        color:white;
+        font-size: 70px;
+        text-align: center;
+        animation-name: headerfooter;
+        animation-duration:2s;
+    }
+
+    p{
+        font-size:40px;
+    }
+
+    .grid{
+        text-align: center;
+        padding-right:20px;
+        
+    }
+    #gridcont{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        list-style:none;
+    }
+
+    .ah{
+        border:5px solid black;
+        padding: 2px; 
+        text-decoration: none;
+    }
+
+    .ah:hover{
+        background-color: gray;
+    }
+
+    #pungrid{
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .imgpuns:hover{
+        border:5px solid black;
+        opacity:0.5;
+    }
+
+
+    #memebox{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        grid-template-columns: auto auto auto auto;
+        list-style: none;
+        justify-content:space-around;
+        align-items: center;
+    }
+
+    .imgmemes:hover{
+        border:5px solid black;
+        opacity:0.5;
+    }
+
+    #pickupgrid{
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .imgpickups:hover{
+        border:5px solid black;
+        opacity:0.5;
+    }
+    }
 
 
 
@@ -152,7 +481,6 @@ p{
         color: white;
         font-weight: bold;
         text-decoration: none;
-        font-size: 30px;
         animation-name: headerfooternone;
         animation-duration:4s;
     }
@@ -163,7 +491,6 @@ p{
     }
     h3,p,a{
         color:white;
-        font-size: 70px;
         text-align: center;
         animation-name: headerfooternone;
         animation-duration:4s;
@@ -173,23 +500,6 @@ p{
         opacity:1;
     }
 
-    @keyframes examplenone{
-        from{
-            opacity: 0.5;
-        }
-        to{
-            opacity:1;
-        }
-    }
     
-    
-    @keyframes headerfooternone{
-        from{
-            opacity:0.5;
-        }
-        to{
-            opacity:1;
-        }
-    }
 
 }
