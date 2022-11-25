@@ -46,7 +46,9 @@ footer a{
 }
 nav a:hover, footer a:hover{
     color: grey;
+    text-decoration: underline;
 }
+
 
 #img{
     padding-left: 2%;
@@ -133,7 +135,7 @@ p{
     flex-wrap: wrap;
     grid-template-columns: auto;
     list-style: none;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
 }
 .imgmemes{
