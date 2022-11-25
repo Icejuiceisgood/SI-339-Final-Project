@@ -131,7 +131,7 @@ p{
 
 #memebox{
     display:flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
     grid-template-columns: auto;
     list-style: none;
@@ -308,6 +308,7 @@ p{
 #memebox{
     grid-template-columns: auto auto auto auto;
     justify-content:space-between;
+    flex-direction: row;
 }
 
 .imgmemes:hover{
