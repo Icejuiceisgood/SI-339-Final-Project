@@ -239,7 +239,7 @@ p{
 
     
     #pungrid{
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
     }
 
     
@@ -251,12 +251,13 @@ p{
     
     #memebox{
         flex-direction: row-reverse;
+        justify-content: space-around;
     }
     .imgmemes{
-        width: 200px;
+        width: 300px;
     }
     .imgpuns{
-        width: 200px;
+        width: 300px;
     }
     
     
@@ -266,7 +267,7 @@ p{
     }
     
     #pickupgrid{
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
     }
     .imgpickups{
         width: 250px;
